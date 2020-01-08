@@ -1,0 +1,9 @@
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\bin\Debug\TestePDEX.exe.config
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\bin\Debug\TestePDEX.exe
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\bin\Debug\TestePDEX.pdb
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.csprojAssemblyReference.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.Properties.Resources.resources
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.csproj.GenerateResource.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.csproj.CoreCompileInputs.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.exe
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.pdb
