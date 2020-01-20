@@ -3,3 +3,9 @@
 ################################################################################
 
 /JumpStart/.vs/JumpStart/DesignTimeBuild
+/JumpStart/.vs/JumpStart/v16/Server/sqlite3
+/JumpStart/PDEX.Extensibility/bin/Debug
+/JumpStart/PDEX.Extensibility/obj/Debug
+/JumpStart/PDEXERP/obj/Debug
+/JumpStart/PDEXLib/bin/Debug/netstandard2.0
+/JumpStart/Primavera.Bot.PDEXTopic/obj/Debug

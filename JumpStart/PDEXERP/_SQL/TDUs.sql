@@ -18,6 +18,7 @@ CREATE TABLE [dbo].[TDU_PDEXCabimentacao]
 	,	[CDU_TipoDoc]					[nvarchar](5) NOT NULL
 	,	[CDU_Serie]						[nvarchar](5) NOT NULL
 	,	[CDU_NumDoc]					[int] NOT NULL
+	,	[CDU_Documento]					[nvarchar](50) NOT NULL
 	,	[CDU_NumDocExterno]				[nvarchar](20) NOT NULL
 	,	[CDU_DataDoc]					[datetime] NOT NULL
 	,	[CDU_TipoEntidade]				[nvarchar](1) NOT NULL

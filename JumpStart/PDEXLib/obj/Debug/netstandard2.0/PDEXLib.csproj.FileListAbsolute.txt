@@ -1,0 +1,9 @@
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\bin\Debug\netstandard2.0\PDEXLib.deps.json
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\bin\Debug\netstandard2.0\PDEXLib.dll
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\bin\Debug\netstandard2.0\PDEXLib.pdb
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\obj\Debug\netstandard2.0\PDEXLib.csproj.CoreCompileInputs.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\obj\Debug\netstandard2.0\PDEXLib.AssemblyInfoInputs.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\obj\Debug\netstandard2.0\PDEXLib.AssemblyInfo.cs
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\obj\Debug\netstandard2.0\PDEXLib.dll
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\obj\Debug\netstandard2.0\PDEXLib.pdb
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXLib\obj\Debug\netstandard2.0\PDEXLib.csprojAssemblyReference.cache

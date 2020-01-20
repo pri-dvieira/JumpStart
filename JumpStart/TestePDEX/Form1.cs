@@ -16,5 +16,11 @@ namespace TestePDEX
         {
             InitializeComponent();
         }
+
+        private void ButtonCabimentacao_Click(object sender, EventArgs e)
+        {
+            PDEXERP.Main pdexMain = new PDEXERP.Main(PriEngine.BSO, PriEngine.Plataforma);
+            pdexMain.DocCabimentacao();
+        }
     }
 }

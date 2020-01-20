@@ -1,0 +1,1877 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UpgradeHelpers.FpSpread</name>
+    </assembly>
+    <members>
+        <member name="T:UpgradeHelpers.Spread.FpSpread">
+            <summary>
+            Farpoint Helper Class for VB6 control equivalence
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.Change">
+            <summary>
+            Change event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.CellClick">
+            <summary>
+            CellClick event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.CellDoubleClick">
+            <summary>
+            Occurs when the user presses the left mouse button down twice (double-clicks) in a cell
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.CellRightClick">
+            <summary>
+            Cell Right click event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.LeaveCell">
+            <summary>
+            Leave Cell event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.LeaveRow">
+            <summary>
+            Leave Row event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.TopLeftChange">
+            <summary>
+            Top Left Change event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.EditChange">
+            <summary>
+            Edit Change event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.BeforeEditMode">
+            <summary>
+            Before Edit Mode event handler
+            </summary>
+        </member>
+        <member name="E:UpgradeHelpers.Spread.FpSpread.EditModeEvent">
+            <summary>
+            Edit Mode event handler
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellNote">
+            <summary>
+            Get/Set a cell note
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellNoteIndicatorPosition">
+            <summary>
+            Get/Set a cell note indicator position
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.OnLostFocus(System.EventArgs)">
+            <summary>
+            This override was created to ignore the fpSpread logic that re-order the data on DataBound context with Stored Procedures
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellNoteIndicatorSize">
+            <summary>
+            Get/Set a cell note indicator size
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetColUserSortIndicator(System.Int32)">
+            <summary>
+            Gets the column sort indicator for a given column index.
+            </summary>
+            <param name="col"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetColUserSortIndicator(System.Int32,FarPoint.Win.Spread.Model.SortIndicator)">
+            <summary>
+            Sets the column sort indicator
+            </summary>
+            <param name="col"></param>
+            <param name="sort"></param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TextTip">
+            <summary>
+            Get/Set the control TextTip policy
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellNoteIndicator">
+            <summary>
+            Get/Set whether the cell note indicator is displayed. If the Cell note is displayed, the ToolTipFetch event will be fired.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.BackColor">
+            <summary>
+            Get/Set Back color
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ActiveRowIndex">
+            <summary>
+            Get/Set Active Row Index. This property is 1-based
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ActiveColumnIndex">
+            <summary>
+            Get/Set Active column index. This property is 1-based
+            </summary>        
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.InitializeSheetView(FarPoint.Win.Spread.SheetView)">
+            <summary>
+            Initialize Sheet View
+            </summary>
+            <param name="sheet">SheetView to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.InitializeSpread">
+            <summary>
+            Initialize default parameters for FP Spread
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetActionKey(System.Int16,System.Boolean,System.Boolean,System.Windows.Forms.Keys)">
+            <summary>
+            Sets the shortcut key or navigation key assigned to a specified action. 
+            </summary>
+            <param name="action">0 = Clears the active cell. 1 = displays the current date and time. 2 = displays the cell editor</param>
+            <param name="shift"></param>
+            <param name="ctrl"></param>
+            <param name="Key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeDateCentury">
+            <summary>
+            Sets or returns whether to display the year as a four-digit value in a date cell.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellBorderStyle">
+            <summary>
+            Cell Border Style value
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellBorderType">
+            <summary>
+            Cell Border Type. VB6 style.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Row">
+            <summary>
+            Gets/sets a specific row or specifies the first row of a block of cells on which an operation is to occur
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Col">
+            <summary>
+            Gets/sets a specific colum or specifies the first row of a block of cells on which an operation is to occur
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Row2">
+            <summary>
+            Gets/sets the last row of a block of cells on which an operation is to occur
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Col2">
+            <summary>
+            Gets/sets the last column of a block of cells on which an operation is to occur
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.DestCol">
+            <summary>
+            Column index of the top left cell in the destination block for a swap action
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.DestRow">
+            <summary>
+            Row index of the top left cell in the destination block for a swap action
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.ValidRowAndCol(System.Int32,System.Int32)">
+            <summary>
+            Validates if a Row,Col pair is within the bounds of the Grid 
+            </summary>
+            <param name="Row">Row to validate</param>
+            <param name="Col">Column to validate</param>
+            <returns></returns>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.VisibleCols">
+            <summary>
+            Visible Columns
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.VisibleRows">
+            <summary>
+            Visible Rows
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.LeftCol">
+            <summary>
+            Left Column displayed
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.MaxCols">
+            <summary>
+            Get/Set Max of Columns
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.MaxRows">
+            <summary>
+            Get/Set Max of Rows
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetRowHeight(System.Int32)">
+            <summary>
+            Gets Row Height
+            </summary>
+            <param name="Row">row to look at</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetCellHeight(System.Int32,System.Int32)">
+            <summary>
+            Gets Cell Height
+            </summary>
+            <param name="Row">Row to look at</param>
+            <param name="Col">Column to look at</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetBackColor(System.Drawing.Color)">
+            <summary>
+            This method is the equivalent to. Backcolor of farpoint 3.0
+            </summary>
+            <param name="setColor"></param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.MaxTextRowHeight(System.Int32)">
+            <summary>
+            Returns the Preferred RowHeight
+            This method might behave diferently than the VB6 version of it.
+            </summary>
+            <param name="Row">Row to look at</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetRowHeight(System.Int32,System.Single)">
+            <summary>
+            Sets the Height for a row using the value
+            </summary>
+            <param name="Row">Row to look at</param>
+            <param name="Value">Value to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetColWidth(System.Int32,System.Boolean)">
+            <summary>
+            Gets Column Width
+            </summary>
+            <param name="Col">Column to look at</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetColWidth(System.Int32,System.Single,System.Boolean)">
+            <summary>
+            Sets Column Width
+            </summary>
+            <param name="Col">Column to look at</param>
+            <param name="Value">Value to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetRowHidden(System.Int32)">
+            <summary>
+            Gets hidden condition for a specific row
+            </summary>
+            <param name="Row">Row to look at</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetRowHidden(System.Int32,System.Boolean)">
+            <summary>
+            Sets hidden state for a specific row
+            </summary>
+            <param name="Row">Row to look at</param>
+            <param name="Value">Value to set</param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.RowHidden">
+            <summary>
+            Get/Set Row Hidden state, using the actual Row value
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetColHidden(System.Int32)">
+            <summary>
+            Gets Column Hidden state for a specific Column
+            </summary>
+            <param name="Col">Column to look at</param>
+            <returns>True if column specified has visible false state</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetColHidden(System.Int32,System.Boolean)">
+            <summary>
+            Sets Column Hidden state for specified column
+            </summary>
+            <param name="Col">Column to look at</param>
+            <param name="Value">Value to set</param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ColHidden">
+            <summary>
+            Get/Set Column Hidden state
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.GridWidth">
+            <summary>
+            full width of the grid object (in pixels) based on displayed column widths 
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetLastNonEmptyRow(FarPoint.Win.Spread.NonEmptyItemFlag)">
+            <summary>
+            Gets Last non empty Row using the NonEmptyItemFlag
+            </summary>
+            <param name="dataFlag">NonEmptyItemFlag to use</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetLastNonEmptyColumn(FarPoint.Win.Spread.NonEmptyItemFlag)">
+            <summary>
+            Gets Last non Empty Column using the NonEmptyItemFlag
+            </summary>
+            <param name="dataFlag">NonEmptyItemFlag to use</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.ColWidthFromPixels(System.Int32)">
+            <summary>
+            Converts a pixel width to Column Width
+            </summary>
+            <param name="Width">value to convert</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.ColWidthToPixels(System.Single)">
+            <summary>
+            Convert Width Column to Pixels
+            </summary>
+            <param name="Width">value to convert</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetActiveCell(System.Int32,System.Int32)">
+            <summary>
+            Sets Active Cell
+            </summary>
+            <param name="Row">row to look at</param>
+            <param name="Col">column to look at</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.ClearRange(System.Int32,System.Int32)">
+            <summary>
+            Clear Range
+            </summary>
+            <param name="Row">row to look at</param>
+            <param name="Col">column to look at</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.ClearRange(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Clear Range
+            </summary>
+            <param name="Row1">Left Row to look at</param>
+            <param name="Col1">Top column to look at</param>
+            <param name="Row2">Right Row to look at</param>
+            <param name="Col2">Bottom column to look at</param>
+            <param name="DataOnly">if only data</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.ClearSelection">
+            <summary>
+            Clears selection
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Clip">
+            <summary>
+            Clip
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.AddSelection(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Selects a block of cells if the AllowMultiBlocks property is set to true.
+            </summary>
+            <param name="Col"></param>
+            <param name="Row"></param>
+            <param name="Col2"></param>
+            <param name="Row2"></param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetSelection(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Selects a block of cells in the spreadsheet
+            </summary>
+            <param name="Col">Top Column</param>
+            <param name="Row">Left Row</param>
+            <param name="Col2">Bottom Column</param>
+            <param name="Row2">Right Row</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetSelection(System.Int32,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Gets Selection
+            </summary>
+            <param name="BlockNo">Block number</param>
+            <param name="Col">returned top column</param>
+            <param name="Row">returned left row</param>
+            <param name="Col2">returned bottom column</param>
+            <param name="Row2">returned right row</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetMultiSelItem(System.Int32)">
+            <summary>
+            Gets Multi Selection items
+            </summary>
+            <param name="SelPrev">Selected Previous</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.DeleteRows(System.Int32,System.Int32)">
+            <summary>
+            Deletes the row or rows on this sheet at the specified index.
+            </summary>
+            <param name="row">Index of first row to be removed</param>
+            <param name="count">Number of rows to be removed</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.InsertRows(System.Int32,System.Int32)">
+            <summary>
+            Insert a row or rows after indicated Row
+            </summary>
+            <param name="Row">Row number</param>
+            <returns></returns>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Action">
+            <summary>
+            Sets Action from Action Constants
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetCellType(System.Int32,System.Int32)">
+            <summary>
+            Gets Cell Type for specified row and column
+            </summary>
+            <param name="Row">row to look at</param>
+            <param name="Col">column to look at</param>
+            <returns>ICellType</returns>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellBorderColor">
+            <summary>
+            Cell Border Color
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CellType">
+            <summary>
+            Get/Set CellType for actual Row and Column
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeButtonType">
+            <summary>
+            Whether the button cell behaves as a one-state or two-state button.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeButtonPictureDown">
+            <summary>
+            The image displayed when a button is down.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeButtonPicture">
+            <summary>
+            The image for the button.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.FontName">
+            <summary>
+            Get/Set FontName to use
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.FontBold">
+            <summary>
+            Font Bold for current row, col
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.FontItalic">
+            <summary>
+            Get/Set Font Italic
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.FontUnderline">
+            <summary>
+            Get/Set Font Underline
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.FontStrikethru">
+            <summary>
+            Get/Set Font Underline
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.GrayAreaBackColor">
+            <summary>
+            Gray Area Back Color
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.GridColor">
+            <summary>
+            Get/Set Grid Color
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ShadowColor">
+            <summary>
+            Gets/sets the background color of the column and row headers
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ShadowText">
+            <summary>
+            Gets/sets the text color used for the column and row headers
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ShadowDark">
+            <summary>
+            Gets/sets the color of the bottom and right borders of the column and row headers
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.GridShowHoriz">
+            <summary>
+            Get/Set Grid Show Horizontal Grid Lines
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.GridShowVert">
+            <summary>
+            Get/Set Grid Show Vertical Lines
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.WordWrap">
+            <summary>
+            Wordwrap text cells/columns
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Lock">
+            <summary>
+            Lock the Grid
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.LockForeColor">
+            <summary>
+            Gets or sets the foreground color of locked cells.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.LockBackColor">
+            <summary>
+            Gets or sets the background color of locked cells.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.SelBlockRow">
+            <summary>
+            Gets Selected Block Row
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.SelBlockRow2">
+            <summary>
+            Gets Selected Block Row 2
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.SelModeSelCount">
+            <summary>
+            Gets Selected Mode Selection Count
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.SelModeSelected">
+            <summary>
+            Sets or returns the selection state of a row when the spreadsheet is in extended- or multiple-selection operation mode.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.SortBy">
+            <summary>
+            Get/Set SortBy constant
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetSortKey(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="nIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetSortKey(System.Int32,System.Int32)">
+            <summary>
+            Sets Sort Key for index
+            </summary>
+            <param name="nIndex">index in sort list</param>
+            <param name="value">value to set</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetSortKeyOrder(System.Int32)">
+            <summary>
+            Gets Sort Key Order constant
+            </summary>
+            <param name="nIndex">index in sort list</param>
+            <returns>SortKeyOrderConstants constant</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetSortKeyOrder(System.Int32,UpgradeHelpers.Spread.SortKeyOrderConstants)">
+            <summary>
+            Sets Sort Key Order with SortKeyOrderConstants constant
+            </summary>
+            <param name="nIndex">index in sort list</param>
+            <param name="value">constant</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetText(System.Int32,System.Int32,System.Object)">
+            <summary>
+            Set Text to the col, row index
+            </summary>
+            <param name="col">column</param>
+            <param name="row">row</param>
+            <param name="text">text to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetText(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Set Text to the col, row index
+            </summary>
+            <param name="col">column</param>
+            <param name="row">row</param>
+            <param name="value">text to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetText(System.Int32,System.Int32)">
+            <summary>
+            Gets the Text at col and row
+            </summary>
+            <param name="col">column</param>
+            <param name="row">row</param>
+            <param name="text">text to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetValue(System.Int32,System.Int32)">
+            <summary>
+            Gets unformated data from the specified column and row cell
+            </summary>
+            <param name="col">Column index</param>
+            <param name="row">Row index</param>
+            <returns>object with cell value</returns>
+            
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetString(System.Int32,System.Int32)">
+            <summary>
+            Gets the string.
+            </summary>
+            <param name="col">The col.</param>
+            <param name="row">The row.</param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetDouble(System.Int32,System.Int32)">
+            <summary>
+            Gets unformated data from the specified column and row cell
+            </summary>
+            <param name="col">Column index</param>
+            <param name="row">Row index</param>
+            <returns>value with cell value</returns>
+            
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetInt(System.Int32,System.Int32)">
+            <summary>
+            Gets unformated data from the specified column and row cell
+            </summary>
+            <param name="col">Column index</param>
+            <param name="row">Row index</param>
+            <returns>value with cell value</returns>
+            
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetInt64(System.Int32,System.Int32)">
+            <summary>
+            Gets unformated data from the specified column and row cell
+            </summary>
+            <param name="col">Column index</param>
+            <param name="row">Row index</param>
+            <returns>value with cell value</returns>
+            
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetFloat(System.Int32,System.Int32)">
+            <summary>
+            Gets unformated data from the specified column and row cell
+            </summary>
+            <param name="col">Column index</param>
+            <param name="row">Row index</param>
+            <returns>value with cell value</returns>
+            
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetBool(System.Int32,System.Int32)">
+            <summary>
+            Gets unformated data from the specified column and row cell
+            </summary>
+            <param name="col">Column index</param>
+            <param name="row">Row index</param>
+            <returns>value with cell value</returns>
+            
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetDateTime(System.Int32,System.Int32)">
+            <summary>
+            Gets unformated data from the specified column and row cell
+            </summary>
+            <param name="col">Column index</param>
+            <param name="row">Row index</param>
+            <returns>value with cell value</returns>
+            
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Text">
+            <summary>
+            Get/Set Text in Row, Col, Row2, Col2
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TopRow">
+            <summary>
+            Top Row
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ToolTipText">
+            <summary>
+            Get/Set ToolTip text
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeComboBoxList">
+            <summary>
+            Sets Type combobox List using a string separated by tabs
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeButtonText">
+            <summary>
+            Type Button Text
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeButtonTextColor">
+            <summary>
+            Type Button Text Color
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeButtonColor">
+            <summary>
+            Type Button Text Color
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeCheckCenter">
+            <summary>
+            Get or Set when is there a checkbox in the current Row/Col are checkboxes centers them in the cell
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeCheckType">
+            <summary>
+            Type Check Type
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeCheckPicture">
+            <summary>
+            Sets or returns the picture used for each state of a check box
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeComboBoxCount">
+            <summary>
+            Gets the number of items in the combo box list.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeComboBoxEditable">
+            <summary>
+            Gets/sets whether users can edit the text in a combo box cell
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeComboBoxString">
+            <summary>
+            Gets or sets the combo box item on which to perform an operation
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeEditMultiLine">
+            <summary>
+            Gets Set Type Edit Multiline state
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeSpin">
+            <summary>
+            Gets/sets whether a spin button is displayed in a date, time, or integer cell
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.DataRowCnt">
+            <summary>
+            Returns the last row that contains data in the spreadsheet
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeNumberDecimalSeparator">
+            <summary>
+            Get/Set Type Float Decimal Char Separator
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeHAlign">
+            <summary>
+            Sets Type Horizontal Alignment
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeVAlign">
+            <summary>
+            Sets Type Vertical Align
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetInteger(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            Gets Integer Value in Row, Column, if is not a number return 0
+            </summary>
+            <param name="Row">Row to look at</param>
+            <param name="Col">Column to look at</param>
+            <param name="value">Reference to variable to return integer value</param>
+            <returns>Boolean true if value is returned</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetValue(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets the Value (unformatted data) at the cell range given by Row, Col, Row2 and Col2
+            </summary>
+            <param name="Row">Specificies a row or the first row of a block of cells on which an operation is to occur</param>
+            <param name="Col">Specificies a col or the first col of a block of cells on which an operation is to occur</param>
+            <param name="Row2">Last row of a block of cells on which an operation is to occur</param>
+            <param name="Col2">Last column of a block of cells on which an operation is to occur</param>
+            <returns>Object value</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetValue(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)">
+            <summary>
+            Sets Value (unformatted data) at the cell range given by Row, Col, Row2 and Col2
+            </summary>
+            <param name="Row">Specificies a row or the first row of a block of cells on which an operation is to occur</param>
+            <param name="Col">Specificies a col or the first col of a block of cells on which an operation is to occur</param>
+            <param name="Row2">Last row of a block of cells on which an operation is to occur</param>
+            <param name="Col2">Last column of a block of cells on which an operation is to occur</param>
+            <param name="value">Value to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetCellRange(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets a cell range given by Row, Col, Row2 and Col2
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Value">
+            <summary>
+            Gets/Sets unformatted data.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.RowsFrozen">
+            <summary>
+            Get/Set Rows Frozen state
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ColsFrozen">
+            <summary>
+            Get/Set Columns Frozen state
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CursorStyle">
+            <summary>
+            Cursor Style
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.CursorType">
+            <summary>
+            Cursor Type
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetCellFromScreenCoord(System.Int32@,System.Int32@,System.Single,System.Single)">
+            <summary>
+            Gets Cell from screen coordinate
+            </summary>
+            <param name="Col">returned column</param>
+            <param name="Row">returned row</param>
+            <param name="X">X pixel position</param>
+            <param name="Y">Y pixel position</param>
+            <returns>Cell Range at X,Y position</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetCellFromPixel(System.Single,System.Single)">
+            <summary>
+            Gets Cell from pixel
+            </summary>
+            <param name="X">X pixel position</param>
+            <param name="Y">Y pixel position</param>
+            <returns>Cell Range at X,Y position</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetCellPos(System.Int32,System.Int32,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Gets Cell Position
+            </summary>
+            <param name="Col">Column</param>
+            <param name="Row">Row</param>
+            <param name="l">Left position</param>
+            <param name="t">Top position</param>
+            <param name="w">Width</param>
+            <param name="h">Height</param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ReDraw">
+            <summary>
+            Get/Set Redraw action
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.RunLocalEvents">
+            <summary>
+            Sets RunLocalEvents status
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetColItemData(System.Int32,System.Int32)">
+            <summary>
+            ItemData is stored in a generic collection instead of the Tag property to avoid boxing/unboxing 
+            which has a performance hit
+            </summary>
+            <param name="Col">Column to set at</param>
+            <param name="value">value to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetRowItemData(System.Int32,System.Int32)">
+            <summary>
+            Sets Row Item Data at Row
+            </summary>
+            <param name="Row">Row to look at</param>
+            <param name="value">value to set</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetColItemData(System.Int32)">
+            <summary>
+            Gets Column Item Data
+            </summary>
+            <param name="Col">Column to look at</param>
+            <returns>Data in column position</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetRowItemData(System.Int32)">
+            <summary>
+            Gets Row Item data
+            </summary>
+            <param name="Row">Row to look at</param>
+            <returns>Data in Row position</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetCellDirtyFlag(System.Int32,System.Int32)">
+            <summary>
+            Returns whether a cell has been marked as changed. 
+            </summary>
+            <param name="col"></param>
+            <param name="row"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.SetCellDirtyFlag(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Flags a cell as modified.
+            </summary>
+            <param name="col"></param>
+            <param name="row"></param>
+            <returns>TRUE if successfull, otherwise false</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.FpSpread_LeaveCell(System.Object,FarPoint.Win.Spread.LeaveCellEventArgs)">
+            <summary>
+            LeaveCell event
+            </summary>
+            <param name="sender">Object sender</param>
+            <param name="eventArgs">Event arguments</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.KeepSelections(System.Int32,System.Int32)">
+            <summary>
+            Keeps cells selected when CTRL key is pressed 
+            and SelectionPolicy is set as MultiRange.
+            </summary>
+            <param name="newRow">The new row number.</param>
+            <param name="newColumn">The new column number.</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.FpSpread_LeftChange(System.Object,FarPoint.Win.Spread.LeftChangeEventArgs)">
+            <summary>
+            Left Change event
+            </summary>
+            <param name="sender">object sender</param>
+            <param name="eventArgs">Event arguments</param>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.FpSpread_TopChange(System.Object,FarPoint.Win.Spread.TopChangeEventArgs)">
+            <summary>
+            Top Change event
+            </summary>
+            <param name="sender">Object sender</param>
+            <param name="eventArgs">Event Arguments</param>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FpSpread.PastingHandled">
+            <summary>
+            For Pasting purposes with Clipboard
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Position">
+            <summary>
+            Position
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.Protect">
+            <summary>
+            Protect
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ProcessTab">
+            <summary>
+            ProcessTab
+            </summary>
+            
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.BackColorStyle">
+            <summary>
+            BackColorStyle sets the way backcolor shows in the grid.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.BlockMode">
+            <summary>
+            BlockMode blocks the grid or column or row or single cell to be modified. 
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.ChangeMade">
+            <summary>
+            Get/Set wether the user has made any change to data in the grid.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeComboBoxHwnd">
+            <summary>
+            Handle
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeComboBoxIndex">
+            <summary>
+            Gets or sets the combo box item on which to perform an operation
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeDateFormat">
+            <summary>
+            Type Date Format
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeEditLen">
+            <summary>
+            Gets or sets the maximum number of characters allowed in the text or combo cells.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeDateMax">
+            <summary>
+            Gets or sets the maximum date allowed in a datetime cell.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeDateMin">
+            <summary>
+            Gets or sets the minimum date allowed in a datetime cell.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.TypeMaxEditLen">
+            <summary>
+            Gets or sets the maximum number of characters allowed in the text or combo cells.
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.FormulaSync">
+            <summary>
+            Get/Set FormulaSync has no equivalent en FPSpread.Net
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.FpSpread.NoBeep">
+            <summary>
+            Get/Set NoBeep has no equivalent en FPSpread.Net
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.Clone">
+            <summary>
+            Creates a copy of the format FpSpread.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.FpSpread.GetEventSubscribers(System.Object,System.String)">
+            <summary>
+            Gets the delegates bound to an event in an object
+            </summary>
+            <param name="Target">The object</param>
+            <param name="EventName">The event name</param>
+            <returns>Null if no delegates or event where found</returns>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.F4RowFieldsEventArgs.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="eventArgs"></param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.F4RowFieldsEventArgs.Col">
+            <summary>
+            Gets Column
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.F4RowFieldsEventArgs.Row">
+            <summary>
+            Gets Row
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.CellComparer">
+            <summary>
+            Class for Cell comparison purposes
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.LeaveRowEventHandler">
+            <summary>
+            Leave Row event handler
+            </summary>
+            <param name="sender">object sender</param>
+            <param name="e">Leave cell event arguments</param>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.TopLeftChangeEventHandler">
+            <summary>
+            Top Left Change event handler
+            </summary>
+            <param name="sender">object sender</param>
+            <param name="e">Top Left change event arguments</param>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.BeforeEditModeEventHandler">
+            <summary>
+            Before Edit Mode event handler
+            </summary>
+            <param name="sender">object sender</param>
+            <param name="e"></param>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.EditModeEventHandler">
+            <summary>
+            Edit Mode event handler
+            </summary>
+            <param name="sender">object sender</param>
+            <param name="e"></param>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.LeaveCellEventArgs">
+            <summary>
+            Leave Cell Event Arguments Class, implemented from Farpoint Leave Cell Event Args
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.LeaveCellEventArgs.#ctor(FarPoint.Win.Spread.SpreadView,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor passing all parameter to Farpoint class
+            </summary>
+            <param name="view">view</param>
+            <param name="row">row</param>
+            <param name="column">column</param>
+            <param name="newRow">new row</param>
+            <param name="newColumn">new column</param>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.TopLeftChangeEventArgs">
+            <summary>
+            Top Left Change Event Arguments class
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.TopLeftChangeEventArgs.#ctor(FarPoint.Win.Spread.SpreadView,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="view">SpredView</param>
+            <param name="oldLeft">old left</param>
+            <param name="newLeft">new left</param>
+            <param name="oldTop">old top</param>
+            <param name="newTop">new top</param>
+            <param name="rowViewportIndex">row view port index</param>
+            <param name="columnViewportIndex">column view port index</param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.TopLeftChangeEventArgs.NewLeft">
+            <summary>
+            New Left
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.TopLeftChangeEventArgs.OldLeft">
+            <summary>
+            Old Left
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.TopLeftChangeEventArgs.NewTop">
+            <summary>
+            New Top
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.TopLeftChangeEventArgs.OldTop">
+            <summary>
+            Old Top
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.TopLeftChangeEventArgs.RowViewportIndex">
+            <summary>
+            Row view port index
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.TopLeftChangeEventArgs.ColumnViewportIndex">
+            <summary>
+            Column view port index
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.BeforeEditModeEventArgs">
+            <summary>
+            Before Edit Mode Event Arguments class
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.BeforeEditModeEventArgs.#ctor(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="Row">Row</param>
+            <param name="Col">Col</param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.BeforeEditModeEventArgs.Row">
+            <summary>
+            Row
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.BeforeEditModeEventArgs.Col">
+            <summary>
+            Col
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.BeforeEditModeEventArgs.Cancel">
+            <summary>
+            Cancel
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.EditModeEventArgs">
+            <summary>
+            Edit Mode Event Arguments class
+            </summary>
+        </member>
+        <member name="M:UpgradeHelpers.Spread.EditModeEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="Row">Row</param>
+            <param name="Col">Col</param>
+            <param name="Mode">Mode</param>
+            <param name="ChangeMade">ChangeMade</param>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.EditModeEventArgs.Row">
+            <summary>
+            Row
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.EditModeEventArgs.Col">
+            <summary>
+            Col
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.EditModeEventArgs.Mode">
+            <summary>
+            Mode
+            </summary>
+        </member>
+        <member name="P:UpgradeHelpers.Spread.EditModeEventArgs.ChangeMade">
+            <summary>
+            Change Made
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.BackColorStyleConstants">
+            <summary>
+            Back Color style constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.BackColorStyleConstants.BackColorStyleOverGrid">
+            <summary>
+            Over Grid
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.BackColorStyleConstants.BackColorStyleUnderGrid">
+            <summary>
+            Under Grid
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.BackColorStyleConstants.BackColorStyleOverHorzGridOnly">
+            <summary>
+            Over Horizantal Grid only
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.BackColorStyleConstants.BackColorStyleOverVertGridOnly">
+            <summary>
+            Over Vertical Grid only
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.CellBorderStyleConstants">
+            <summary>
+            Cell Border Style constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleBlank">
+            <summary>
+            CellBorderStyleBlank
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleDash">
+            <summary>
+            CellBorderStyleDash
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleDashDot">
+            <summary>
+            CellBorderStyleDashDot
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleDashDotDot">
+            <summary>
+            CellBorderStyleDashDotDot
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleDefault">
+            <summary>
+            CellBorderStyleDefault
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleDot">
+            <summary>
+            CellBorderStyleDot
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleFineDash">
+            <summary>
+            CellBorderStyleFineDash
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleFineDashDot">
+            <summary>
+            CellBorderStyleFineDashDot
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleFineDashDotDot">
+            <summary>
+            CellBorderStyleFineDashDotDot
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleFineDot">
+            <summary>
+            CellBorderStyleFineDot
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleFineSolid">
+            <summary>
+            CellBorderStyleFineSolid
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CellBorderStyleConstants.CellBorderStyleSolid">
+            <summary>
+            CellBorderStyleSolid
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.CursorStyleConstants">
+            <summary>
+            Cursor kinds
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorStyleConstants.CursorStyleArrow">
+            <summary>
+            Arrow cursor
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorStyleConstants.CursorStyleDefault">
+            <summary>
+            Default cursor
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorStyleConstants.CursorStyleDefColResize">
+            <summary>
+            Default Column Resize
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorStyleConstants.CursorStyleDefRowResize">
+            <summary>
+            Default Row Resize
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorStyleConstants.CursorStyleUserDefined">
+            <summary>
+            User defined cursor
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.CursorTypeConstants">
+            <summary>
+            Cursor Type Constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeButton">
+            <summary>
+            Type Button
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeColHeader">
+            <summary>
+            Column Header
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeColResize">
+            <summary>
+            Column Resize
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeDefault">
+            <summary>
+            Type Default
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeDragDrop">
+            <summary>
+            Type Drag Drop
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeDragDropArea">
+            <summary>
+            Type Drag Drop Area
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeGrayArea">
+            <summary>
+            Gray Area
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeLockedCell">
+            <summary>
+            Locked Cell
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeRowHeader">
+            <summary>
+            Type Row Header
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.CursorTypeConstants.CursorTypeRowResize">
+            <summary>
+            Type Row Resize
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.SortKeyOrderConstants">
+            <summary>
+            Sort key order constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.SortKeyOrderConstants.SortKeyOrderNone">
+            <summary>
+            No order
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.SortKeyOrderConstants.SortKeyOrderAscending">
+            <summary>
+            Order Ascending
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.SortKeyOrderConstants.SortKeyOrderDescending">
+            <summary>
+            Order Descending
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.FPActionConstants">
+            <summary>
+            Action constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionActiveCell">
+            <summary>
+            Active cell
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionGotoCell">
+            <summary>
+            Goto cell
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionSelectBlock">
+            <summary>
+            Select block
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionClear">
+            <summary>
+            Clear
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionDeleteCol">
+            <summary>
+            Clear
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionDeleteRow">
+            <summary>
+            Delete Row
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionInsertCol">
+            <summary>
+            Insert column
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionInsertRow">
+            <summary>
+            Insert row
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionReCalc">
+            <summary>
+            ActionReCalc 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionClearText">
+            <summary>
+            Clear text
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionPrint">
+            <summary>
+            ActionPrint 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionDeselectBlock">
+            <summary>
+            Deselect Block
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionDSave">
+            <summary>
+            ActionDSave 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionSetCellBorder">
+            <summary>
+            ActionSetCellBorder  
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionAddMultiSelBlock">
+            <summary>
+            Add multiselect block
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionGetMultiSelection">
+            <summary>
+            Gets multi selection
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionCopyRange">
+            <summary>
+            ActionCopyRange 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionModeRange">
+            <summary>
+            ActionModeRange 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionSwapRange">
+            <summary>
+            ActionSwapRange  
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionClipboardCopy">
+            <summary>
+            Clipboard copy
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionClipboardCut">
+            <summary>
+            ActionClipboardCut copy
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionClipboardPaste">
+            <summary>
+            Clipboard paste
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionSort">
+            <summary>
+            Sort
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionComboClear">
+            <summary>
+            ActionComboClear 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionComboRemove">
+            <summary>
+            ActionComboRemove  
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionReset">
+            <summary>
+            ActionReset   
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionSelModeClear">
+            <summary>
+            ActionSelModeClear 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionVModeRefresh">
+            <summary>
+            ActionVModeRefresh 
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPActionConstants.ActionSmartPrint">
+            <summary>
+            Smart print
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.ClickType">
+            <summary>
+            Click Type constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.ClickType.Down">
+            <summary>
+            Down
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.ClickType.Up">
+            <summary>
+            Up
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.ClickType.DoubleClick">
+            <summary>
+            Double click
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.PositionConstants">
+            <summary>
+            Position Constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionUpperLeft">
+            <summary>
+            Upper left
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionUpperCenter">
+            <summary>
+            Upper center
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionUpperRight">
+            <summary>
+            Upper right
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionCenterLeft">
+            <summary>
+            Center left
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionCenter">
+            <summary>
+            Center
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionCenterRight">
+            <summary>
+            Center right
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionBottomLeft">
+            <summary>
+            Bottom left
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionBottomCenter">
+            <summary>
+            Bottom center
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.PositionConstants.PositionBottomRight">
+            <summary>
+            Bottom right
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.FPScrollBarsConstants">
+            <summary>
+            Scroll bars constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPScrollBarsConstants.ScrollBarsNone">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPScrollBarsConstants.ScrollBarsHorizontal">
+            <summary>
+            Horizontal
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPScrollBarsConstants.ScrollBarsVertical">
+            <summary>
+            Vertical
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.FPScrollBarsConstants.ScrollBarsBoth">
+            <summary>
+            Both
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.enumStdAggregateColumn">
+            <summary>
+            Standard Aggregate Column
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colFirst">
+            <summary>
+            First
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colName">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colIndexPercent">
+            <summary>
+            Index Percent
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colIndexValue">
+            <summary>
+            Index value
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colBenchmarkCount">
+            <summary>
+            Benchmark count
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colFundCount">
+            <summary>
+            Fund count
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colFundValuePreTrade">
+            <summary>
+            Fund value pretrade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colFundPercentPreTrade">
+            <summary>
+            Fund percent pretrade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colMisweightPercentPreTrade">
+            <summary>
+            Missing weight percent pretrade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colMisweightValuePreTrade">
+            <summary>
+            Missing weight value pretrade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colFundValuePostTrade">
+            <summary>
+            Fund value post trade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colFundPercentPostTrade">
+            <summary>
+            Fund percent post trade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colMisweightPercentPostTrade">
+            <summary>
+            Missing weight percent post trade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colMisweightValuePostTrade">
+            <summary>
+            Missing weight value post trade
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colOrderValue">
+            <summary>
+            Order value
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.ColID">
+            <summary>
+            Column Id
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumStdAggregateColumn.colLast">
+            <summary>
+            Last column
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.enumCellImage">
+            <summary>
+            Cell Image constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumCellImage.Checked">
+            <summary>
+            Checked
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumCellImage.Minus">
+            <summary>
+            Minus
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumCellImage.Plus">
+            <summary>
+            Plus
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.enumCellImage.Unchecked">
+            <summary>
+            Unchecked
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.SortByConstants">
+            <summary>
+            Sort by constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.SortByConstants.SortByRow">
+            <summary>
+            By row
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.SortByConstants.SortByCol">
+            <summary>
+            By column
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.TypeDateFormatConstants">
+            <summary>
+            Type Date Format
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeDateFormatConstants.TypeDateFormatDDMMYY">
+            <summary>
+            D M Y
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeDateFormatConstants.TypeDateFormatDDMONYY">
+            <summary>
+            D Month Y
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeDateFormatConstants.TypeDateFormatMMDDYY">
+            <summary>
+            M D Y
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeDateFormatConstants.TypeDateFormatYYMMDD">
+            <summary>
+            Y M D
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.TypeEditCharSetConstants">
+            <summary>
+            Type Edit CharSet Constants
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeEditCharSetConstants.TypeEditCharSetAlpha">
+            <summary>
+            Alpha
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeEditCharSetConstants.TypeEditCharSetAlphaNumeric">
+            <summary>
+            AlphaNumeric
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeEditCharSetConstants.TypeEditCharSetASCII">
+            <summary>
+            ASCII
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeEditCharSetConstants.TypeEditCharSetNumeric">
+            <summary>
+            Numeric
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.TypeCheckTypeConstants">
+            <summary>
+            Type Check Type
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeCheckTypeConstants.TypeCheckTypeNormal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="F:UpgradeHelpers.Spread.TypeCheckTypeConstants.TypeCheckTypeThreeState">
+            <summary>
+            ThreeState
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.FpCellType">
+            <summary>
+            Cell types
+            </summary>
+        </member>
+        <member name="T:UpgradeHelpers.Spread.FpButtonType">
+            <summary>
+            Button types for button cells
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -226,11 +226,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel.Vieira\\Documents\\Visual Studio 2019\\Projects\\JumpStart\\PDEXLib\\PDEXLib.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel.Vieira\\Documents\\Visual Studio 2019\\Projects\\git\\JumpStart\\JumpStart\\PDEXLib\\PDEXLib.csproj",
       "projectName": "PDEXLib",
-      "projectPath": "C:\\Users\\Daniel.Vieira\\Documents\\Visual Studio 2019\\Projects\\JumpStart\\PDEXLib\\PDEXLib.csproj",
+      "projectPath": "C:\\Users\\Daniel.Vieira\\Documents\\Visual Studio 2019\\Projects\\git\\JumpStart\\JumpStart\\PDEXLib\\PDEXLib.csproj",
       "packagesPath": "C:\\Users\\Daniel.Vieira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel.Vieira\\Documents\\Visual Studio 2019\\Projects\\JumpStart\\PDEXLib\\obj\\",
+      "outputPath": "C:\\Users\\Daniel.Vieira\\Documents\\Visual Studio 2019\\Projects\\git\\JumpStart\\JumpStart\\PDEXLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
