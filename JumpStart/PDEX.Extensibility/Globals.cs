@@ -9,5 +9,7 @@ namespace PDEX.Extensibility
     public static class Globals
     {
         public static GlobalFunctions globalFunctions = null;
+
+        
     }
 }

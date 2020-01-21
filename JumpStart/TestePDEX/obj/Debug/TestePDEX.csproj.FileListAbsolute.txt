@@ -7,3 +7,18 @@ C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX
 C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.csproj.CoreCompileInputs.cache
 C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.exe
 C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\JumpStart\TestePDEX\obj\Debug\TestePDEX.pdb
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\bin\Debug\TestePDEX.exe.config
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\bin\Debug\TestePDEX.exe
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\bin\Debug\TestePDEX.pdb
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.csprojAssemblyReference.cache
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.Properties.Resources.resources
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.csproj.GenerateResource.cache
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.csproj.CoreCompileInputs.cache
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.exe
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.pdb
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.exe.config
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\bin\Debug\PDEX.Extensibility.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\bin\Debug\PDEX.Extensibility.pdb
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.csproj.CopyComplete
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.Form111.resources
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\TestePDEX\obj\Debug\TestePDEX.ecraConsulta.resources

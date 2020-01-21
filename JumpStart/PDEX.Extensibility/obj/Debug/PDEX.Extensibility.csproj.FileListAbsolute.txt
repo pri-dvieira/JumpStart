@@ -1,0 +1,16 @@
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\PDEX.Extensibility.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\PDEX.Extensibility.pdb
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\System.Net.Http.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\obj\Debug\PDEX.Extensibility.csprojAssemblyReference.cache
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\obj\Debug\PDEX.Extensibility.csproj.CoreCompileInputs.cache
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\obj\Debug\PDEX.Extensibility.csproj.CopyComplete
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\obj\Debug\PDEX.Extensibility.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\obj\Debug\PDEX.Extensibility.pdb
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\DevExpress.Utils.v18.1.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\Primavera.Extensibility.CustomForm.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\StdBESql100.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\de\DevExpress.Utils.v18.1.resources.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\es\DevExpress.Utils.v18.1.resources.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\ja\DevExpress.Utils.v18.1.resources.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\pt\DevExpress.Utils.v18.1.resources.dll
+C:\Users\primavera\Documents\GitHub\JumpStart\JumpStart\PDEX.Extensibility\bin\Debug\ru\DevExpress.Utils.v18.1.resources.dll
