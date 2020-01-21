@@ -1,0 +1,7 @@
+C:\Program Files (x86)\PRIMAVERA\SG100\Apl\PDEX\PDEXERP.dll
+C:\Program Files (x86)\PRIMAVERA\SG100\Apl\PDEX\PDEXERP.pdb
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXERP\obj\Debug\PDEXERP.csprojAssemblyReference.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXERP\obj\Debug\PDEXERP.csproj.CoreCompileInputs.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXERP\obj\Debug\PDEXERP.csproj.CopyComplete
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXERP\obj\Debug\PDEXERP.dll
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\PDEXERP\obj\Debug\PDEXERP.pdb

@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\..\..\..\Program Files %28x86%29\PRIMAVERA\SG100\Apl\PDEX\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -47,6 +47,24 @@
     </Reference>
     <Reference Include="StdPlatBS100">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\StdPlatBS100.dll</HintPath>
+    <Reference Include="ErpBS100">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\ErpBS100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Primavera.Extensibility.Engine">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.Engine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Primavera.Extensibility.Patterns">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\Primavera.Extensibility.Patterns.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StdBE100">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\StdBE100.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="StdPlatBS100">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\PRIMAVERA\SG100\Apl\StdPlatBS100.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -74,6 +92,7 @@
     <Compile Include="Form111.Designer.cs">
       <DependentUpon>Form111.cs</DependentUpon>
     </Compile>
+    <Compile Include="PriEngine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ecraConsulta.resx">
@@ -81,6 +100,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form111.resx">
       <DependentUpon>Form111.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,6 +129,10 @@
     <ProjectReference Include="..\PDEX.Extensibility\PDEX.Extensibility.csproj">
       <Project>{85BA4E74-00C9-4A9D-B6E2-386E4BBD17E2}</Project>
       <Name>PDEX.Extensibility</Name>
+    <ProjectReference Include="..\PDEXERP\PDEXERP.csproj">
+      <Project>{ced74a2f-eb49-4cef-92e3-8b89bb62c21a}</Project>
+      <Name>PDEXERP</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

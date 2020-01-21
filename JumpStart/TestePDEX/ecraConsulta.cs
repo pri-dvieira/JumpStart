@@ -10,20 +10,17 @@ using System.Windows.Forms;
 
 namespace TestePDEX
 {
-    public partial class ecraConsulta : Form
+    public partial class Form1 : Form
     {
-        public ecraConsulta()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonCabimentacao_Click(object sender, EventArgs e)
         {
-            
-
-
-
-
+            PDEXERP.Main pdexMain = new PDEXERP.Main(PriEngine.BSO, PriEngine.Plataforma);
+            pdexMain.DocCabimentacao();
         }
     }
 }

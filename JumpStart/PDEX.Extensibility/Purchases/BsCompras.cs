@@ -1,10 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CmpBE100;
-using Primavera.Extensibility.BusinessEntities;
 using Primavera.Extensibility.BusinessEntities.ExtensibilityService.EventArgs;
 using Primavera.Extensibility.Purchases.Services;
 using StdBE100;
@@ -13,25 +8,18 @@ namespace PDEX.Extensibility
 {
     public class BsCompras : CmpBSCompras
     {
-        //private GlobalFunctions globals = null;
-
-        private const string TDU_Cabimentacao = "TDU_PDEXCabimentacao";
-
-        //public BsCompras()
-        //{
-        //    globals = new GlobalFunctions(BSO, PSO);
-        //}
-
         public override void DepoisDeGravar(CmpBEDocumentoCompra clsDocCompra, ref string strAvisos, ref string IdDocLiqRet, ref string IdDocLiqRetGar, ExtensibilityEventArgs e)
         {
-            if (Globals.globalFunctions.DocSujeitoCabimentacao(clsDocCompra.Tipodoc))
-            {
-                // Regista documento para cabimentação
-                if (Globals.globalFunctions.DocElegivelCabimentacao(clsDocCompra))
-                {
-                    RegistaParaCabimentacao(clsDocCompra, ref strAvisos);
-                }
-            }
+            //if (Globals.globalFunctions.DocSujeitoCabimentacao(clsDocCompra.Tipodoc))
+            //{
+            //    // Regista documento para cabimentação
+            //    if (Globals.globalFunctions.DocElegivelCabimentacao(clsDocCompra))
+            //    {
+            //        RegistaParaCabimentacao(clsDocCompra, ref strAvisos);
+            //    }
+            //}
+
+            RegistaParaCabimentacao(clsDocCompra, ref strAvisos);
         }
 
         /// <summary>
@@ -60,6 +48,7 @@ namespace PDEX.Extensibility
                     registo.Campos["CDU_TipoDoc"].Valor = documentoCompra.Tipodoc;
                     registo.Campos["CDU_Serie"].Valor = documentoCompra.Serie;
                     registo.Campos["CDU_NumDoc"].Valor = documentoCompra.NumDoc;
+                    registo.Campos["CDU_Documento"].Valor = documentoCompra.Documento;
 
                     registo.Campos["CDU_NumDocExterno"].Valor = documentoCompra.NumDocExterno;
                     registo.Campos["CDU_DataDoc"].Valor = documentoCompra.DataDoc;
@@ -83,7 +72,9 @@ namespace PDEX.Extensibility
                         }
                     }
 
-                    BSO.TabelasUtilizador.Actualiza(TDU_Cabimentacao, registo);
+                    BSO.TabelasUtilizador.Actualiza(Globals.TDU_Cabimentacao, registo);
+
+                    CriaTarefaAsync();
                 }
             }
             catch (Exception ex)
@@ -100,10 +91,10 @@ namespace PDEX.Extensibility
             StdBECamposChave camposChave = new StdBECamposChave();
             camposChave.AddCampoChave("CDU_DocId", documentoCompra.ID);
 
-            if (BSO.TabelasUtilizador.Existe(TDU_Cabimentacao, camposChave))
+            if (BSO.TabelasUtilizador.Existe(Globals.TDU_Cabimentacao, camposChave))
             {
                 // Registo existe, edita
-                registo = BSO.TabelasUtilizador.Edita(TDU_Cabimentacao, camposChave);
+                registo = BSO.TabelasUtilizador.Edita(Globals.TDU_Cabimentacao, camposChave);
             }
             else
             {
@@ -113,5 +104,16 @@ namespace PDEX.Extensibility
 
             return registo;
         }
+
+        private void CriaTarefaAsync()
+        {
+            string topicId = "PDEXTopic";
+            string taskId = "GeneratePDEXMessages";
+            string pipeline = "PDEXTopicPipeline";
+
+            string parametros = PSO.Strings.Formata("topicId=@1@|taskId=@2@|EnterpriseFilter=@3@|InstanceId=@4@", topicId, taskId, BSO.Contexto.CodEmp, BSO.Contexto.Instancia);
+            PSO.Bot.CriaTarefa(topicId, taskId, pipeline, parametros);
+        }
+
     }
 }

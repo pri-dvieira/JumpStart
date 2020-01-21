@@ -1,0 +1,12 @@
+c:\Program Files (x86)\PRIMAVERA\SG900\Apl\HUR\Plugins\Bot\TemplateTopic\PDEXTopic.config
+c:\Program Files (x86)\PRIMAVERA\SG900\Apl\HUR\Plugins\Bot\TemplateTopic\Primavera.Bot.PDEXTopic.dll
+c:\Program Files (x86)\PRIMAVERA\SG900\Apl\HUR\Plugins\Bot\TemplateTopic\Primavera.Bot.PDEXTopic.pdb
+C:\Program Files (x86)\PRIMAVERA\SG100\Apl\HUR\Plugins\Bot\PDEXTopic\PDEXTopic.config
+C:\Program Files (x86)\PRIMAVERA\SG100\Apl\HUR\Plugins\Bot\PDEXTopic\Primavera.Bot.PDEXTopic.dll
+C:\Program Files (x86)\PRIMAVERA\SG100\Apl\HUR\Plugins\Bot\PDEXTopic\Primavera.Bot.PDEXTopic.pdb
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\Primavera.Bot.PDEXTopic\obj\Debug\Primavera.Bot.PDEXTopic.csprojAssemblyReference.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\Primavera.Bot.PDEXTopic\obj\Debug\Primavera.Bot.PDEXTopic.Properties.Resources.resources
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\Primavera.Bot.PDEXTopic\obj\Debug\Primavera.Bot.PDEXTopic.csproj.GenerateResource.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\Primavera.Bot.PDEXTopic\obj\Debug\Primavera.Bot.PDEXTopic.csproj.CoreCompileInputs.cache
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\Primavera.Bot.PDEXTopic\obj\Debug\Primavera.Bot.PDEXTopic.dll
+C:\Users\Daniel.Vieira\Documents\Visual Studio 2019\Projects\git\JumpStart\JumpStart\Primavera.Bot.PDEXTopic\obj\Debug\Primavera.Bot.PDEXTopic.pdb
